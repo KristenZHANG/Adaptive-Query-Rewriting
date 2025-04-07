@@ -138,8 +138,8 @@ python3 step2_qa_reward.v2_readin.py \
     "id": "1_2",
     "doc_labels": [
      [
-      "http://web.archive.org/web/20191124070045id_/https://en.wikipedia.org/wiki/Van_Halen_p12", # doc id
-      16.631799697875977 # doc retrieval score
+      doc id,
+      doc retrieval score
      ],
      ...
     ],
@@ -147,7 +147,7 @@ python3 step2_qa_reward.v2_readin.py \
     "answer": "Yes, Gary Cherone is also known for his work as the lead vocalist of the Boston rock group Extreme."
    },
    "scores": [
-    2.1746015548706055, # loss in generating the answer given to each doc
+    loss in generating the answer given to each doc,
     ... ...
    ]
   },
@@ -222,7 +222,11 @@ CUDA_VISIBLE_DEVICES=0 python3 generate.py \
 
 > Output data {final_output_file_name.json} format (examples).
 ```
-{"Conversation_no": 1, "Turn_no": 2, "conversation": "Q: What is a physician's assistant? A: physician assistants are medical providers who are licensed to diagnose and treat illness and disease and to prescribe medication for patients", "question": "What are the educational requirements required to become one?", "rewrite": "What are the educational requirements required to become a physician assistant?"}
+{"Conversation_no": 1, 
+ "Turn_no": 2, 
+  "conversation": "Q: What is a physician's assistant? A: physician assistants are medical providers who are licensed to diagnose and treat illness and disease and to prescribe medication for patients", 
+  "question": "What are the educational requirements required to become one?", 
+  "rewrite": "What are the educational requirements required to become a physician assistant?"}
 ...
 ```
 ### Step 5. Evaluation
