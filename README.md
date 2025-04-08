@@ -3,12 +3,6 @@ Official Implementation of "[Adaptive Query Rewriting: Aligning Rewriters throug
 
 <img src="resources/adaqr.png" width = "600" />
 
-## Requirements
-```
-torch==2.4.0
-tokenizers==0.20.0
-datasets==2.21.0
-```
 
 ## QReCC
 
